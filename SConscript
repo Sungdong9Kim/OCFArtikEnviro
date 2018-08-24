@@ -116,7 +116,7 @@ if target_os in ['linux']:
 ######################################################################
 client = samples_env.Program('client', ['client.c'])
 server = samples_env.Program('server', ['server.cpp'])
-examples_dir = '/examples/OCFSecure/'
+examples_dir = '/examples/OCFArtikEnviro/'
 client_dat = samples_env.Install(
     build_dir + examples_dir, src_dir + examples_dir + 'ocf_svr_db_client.dat')
 client_dev = samples_env.Install(
@@ -128,6 +128,6 @@ introspection_dat = samples_env.Install(
 
 list_of_samples = [client, client_dat, client_dev, server, server_dat]
 
-Alias("secureExamples", list_of_samples)
+Alias("artikExamples", list_of_samples)
 
-env.AppendTarget('secureExamples')
+env.AppendTarget('aritkExamples')
