@@ -90,6 +90,7 @@ if joule or raspberry_pi or artik_530s:
 #******Added for ARTIK*************************************************
         elif not joule and not raspberry_pi and artik_530s:
             cpp_defines.append('ARTIK')
+            libraries.append('artik-sdk-base')
 #**********************************************************************
 
         else:
