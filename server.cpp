@@ -123,10 +123,10 @@ int ledPin = 7;
 // artik gpio setting
 #ifdef ARTIK
 artik_gpio_module *gpio = (artik_gpio_module *) artik_request_api_module("gpio");
-struct led_gpio led = { NULL, {ARTIK_EAGLEYE503_AGPIO0, led, GPIO_OUT, GPIO_EDGE_NONE, 0, NULL} ;
+struct led_gpio led = { NULL, {ARTIK_EAGLEYE530_AGPIO0, led, GPIO_OUT, GPIO_EDGE_NONE, 0, NULL} };
 artik_error ret = S_OK;
 #endif
-};
+
    private:
         /*
          * Make the payload for the retrieve function (e.g. GET) /binaryswitch
