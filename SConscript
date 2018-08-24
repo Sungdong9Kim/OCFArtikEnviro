@@ -42,8 +42,8 @@ samples_env.PrependUnique(CPPPATH=[
     '#/resource/csdk/connectivity/api',
     '#/resource/oc_logger/include',
     '#/resource/csdk/logger/include/experimental',
-    '/usr/include/artik/base',
-    '/usr/include/artik/systemio'
+    '/usr/include/arm-linux-gnueabihf/artik/base',
+    '/usr/include/arm-linux-gnueabihf/artik/systemio'
 ])
 cpp_defines = ['__WITH_DTLS__', 'TB_LOG']
 libraries = ['octbstack', 'oc']
